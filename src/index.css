@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Bellefair", sans-serif;
+}
+div.home {
+  background: url("../public/assets/img/background-home.jpg") center/cover no-repeat;
+}
+div.dest {
+  background: url("../public/assets/img/background-destination.jpg")   fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+}
+div.crew {
+  background: url("../public/assets/img/background-crew-desktop.88a3c692.jpg");
+}
+div.tech {
+  background: url("../public/assets/img/background-technology-desktop.jpg");
+}
+nav, .nav2 {
+  background: linear-gradient(135dg , rgba(8, 8, 8, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  font-family: "Barlow Condensed", sans-serif;
+}
+h1 ,span ,.uppercase {
+  font-family: "Bellefair", sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 1.5s forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideRight 1.5s forwards;
+}
+.slide-left {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideLeft 1.5s forwards;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(2%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(2%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
